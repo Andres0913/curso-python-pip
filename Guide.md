@@ -70,5 +70,42 @@ Pip3 freeze
 
 - pip3 freeze
 
+- Requirements.txt = Archivo que gestiona todas las dependencias y en que versiones se necesitan.
 
+# Generar el archivo con el siguiente comando
 
+- pip3 freeze > requirements.txt
+
+# Revisar lo que hay dentro del archivo
+
+- cat requirements.txt
+
+# Instalar las dependencias necesarias para contribuir más rápido en proyectos
+
+- pip3 install -r requirements.txt
+
+# Request: A un servicio externo, conectarse a un servicio externo y traer eso datos
+
+# Instalar la dependencia dentro del entorno virtual
+
+- pip3 install requests
+# Verificar la instalacion
+
+- pip3 freeze
+# Crear el archivo para que cualquier persona pueda desplegar el proyecto
+
+ - pip freeze > requeriments.txt
+
+# Para construir el contenedor
+- docker-compose build
+
+# Debemos tener inicializado el docker. Para lanzar digitamos el comando
+
+- docker-compose up -d
+
+# Para ver el estado del contenedor
+- docker-compose ps
+
+# Para ejecutar el contenedor
+
+- docker-compose exec app-csv bash
